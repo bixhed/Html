@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/bixhe/Documents/grails.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        /* General Layout Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #9b59b6; /* Purple */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Left Column */
+        aside.left {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 200px;
+            height: calc(100vh - 160px); /* full height minus header and footer */
+            background-color: #2ecc71; /* Green */
+            color: white;
+            padding: 20px;
+        }
+
+        /* Middle Column */
+        main {
+            position: relative;
+            margin-left: 220px; /* Displaced right of the left column */
+            margin-right: 220px; /* Displaced left of the right column */
+            background-color: #f1c40f; /* Yellow */
+            padding: 20px;
+            height: calc(100vh - 160px);
+        }
+
+        /* Right Column */
+        aside.right {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: calc(100vh - 160px);
+            background-color: #e74c3c; /* Red */
+            color: white;
+            padding: 20px;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #3498db; /* Blue */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>This header has position: fixed, which means it stays fixed at the top of the page even when scrolling. The top: 0 and width: 100% properties ensure it spans the entire width of the viewport.</p>
+    </header>
+
+    <aside class="left">
+        <p>This left column has position: absolute. It is positioned using the left: 0 property, which makes it stick to the left side of its containing element. The top: 80px and bottom: 0 properties ensure it stretches the height from below the header to just above the footer.</p>
+    </aside>
+
+    <main>
+        <p>This middle column has position: relative. It retains its normal flow position but is displaced using the margin-left and margin-right properties to create space between the left and right columns. The height of the middle column adjusts to the remaining space between the header and footer.</p>
+    </main>
+
+    <aside class="right">
+        <p>This right column has position: absolute, similar to the left column. It is positioned using the right: 0 property, which makes it stick to the right side of its containing element. The top: 80px and bottom: 0 properties stretch it to fill the remaining height.</p>
+    </aside>
+
+    <footer>
+        <p>This footer has position: fixed, staying at the bottom of the page with bottom: 0 and width: 100%. It remains fixed even when scrolling.</p>
+    </footer>
+
+
+
+</body></html>
