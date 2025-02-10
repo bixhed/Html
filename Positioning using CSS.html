@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS styles -->
+  <style>
+    /* nav tag css */
+    nav {
+      /* fixed to top */
+      position: fixed;
+      top: 0;
+      /* width of 100% */
+      width: 100%;
+      /* height of 80px */
+      height: 80px;
+      /* white bg color */
+      background-color: white;
+      /* black bottom border */
+      border-bottom: 1px solid black;
+      /* box shadow of 8px */
+      box-shadow: 8px 8px rgb(100, 69, 69);
+    }
+
+    /* logo box css */
+    .logo_box {
+      /* right side of nav */
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      /* 80px by 80px */
+      width: 80px;
+      height: 80px;
+    }
+
+    /* main (container) tag css */
+    main {
+      /* height of 800px */
+      height: 800px;
+      background-color: grey;
+      /* margin-top to push it downwards (not in question) */
+      margin-top: 100px;
+    }
+
+    /* white boxes css */
+    .white_box {
+      /* bg color */
+      background-color: white;
+      /* 200px by 200px */
+      width: 200px;
+      height: 200px;
+      /* margin of 20px */
+      margin: 20px;
+    }
+
+    /* footer css */
+    footer {
+      /* width of 100% */
+      width: 100%;
+      /* height of 80px */
+      height: 80px;
+      background-color: white;
+      /* border top */
+      border-top: 2px solid black;
+      /* centered text */
+      text-align: center;
+    }
+
+    /* below are CSS Styles that are not asked in question  but make the webpage look good*/
+    /* menu css */
+    li {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    /* logo image css */
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    /* menu links css */
+    li a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- nav tag -->
+  <nav>
+    <!-- menu  -->
+    <ul>
+      <!-- menu items -->
+      <li><a href="#item1">Navbar item 1</a></li>
+      <li><a href="#item2">Navbar item 2</a></li>
+      <li><a href="#item3">Navbar item 3</a></li>
+      <li><a href="#item4">Navbar item 4</a></li>
+    </ul>
+    <!-- generic box(div) for logo -->
+    <div class="logo_box">
+      <!-- logo -->
+      <img src="imagename.jpg" alt="a logo image">
+    </div>
+  </nav>
+
+  <!-- container main tag -->
+  <!-- It holds the main content of webpage -->
+  <main>
+    <!-- four white boxes (divs) -->
+    <div class="white_box">
+      White box 1
+    </div>
+    <div class="white_box">
+      White box 2
+    </div>
+    <div class="white_box">
+      White box 3
+    </div>
+    <div class="white_box">
+      White box 4
+    </div>
+  </main>
+
+  <!-- footer tag for bottom of webpage -->
+  <footer>
+    <!-- h1 heading tag -->
+    <h1>Copyright 2025</h1>
+  </footer>
+</body>
+</html>
